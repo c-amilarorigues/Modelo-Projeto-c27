@@ -10,10 +10,10 @@ var computer, computerBase, computerArcher;
 var playerArrows = [];
 var computerArrows = [];
 //
-//Declare the varibales to add 3 life for player and computerplayer
+//Declare as variáveis para adicionar 3 vidas para o jogador e o jogador do computador
 
 function preload() {
-  //Load Image of background
+  //Carregar imagem do plano de fundo
 
 
 }
@@ -60,11 +60,11 @@ function draw() {
 
   Engine.update(engine);
 
-  // Title
+  //Título
   fill("#FFFF");
   textAlign("center");
   textSize(40);
-  text("EPIC ARCHERY", width / 2, 100);
+  text("ARQUEARIA ÉPICA", width / 2, 100);
 
   for (var i = 0; i < playerArrows.length; i++) {
     showArrows(i, playerArrows);
@@ -79,7 +79,7 @@ function draw() {
   for (var i = 0; i < computerArrows.length; i++) {
     showArrows(i, computerArrows);
   }
-  //call Player.life and computerplayer.life
+  //chame Player.life e computerplayer.life
 
 
   computerBase.display();
@@ -170,7 +170,7 @@ function handlePlayerArrowCollision() {
       archerCollision.collided ||
       computerCollision.collided
     ) {
-      console.log("Player Arrow Collided")
+      console.log("Flecha do Jogador Colidiu")
     }
   }
 }
@@ -198,7 +198,7 @@ function handleComputerArrowCollision() {
       playerCollision.collided
     )
     {
-      console.log("Computer Arrow Collided")
+      console.log("Flecha do Computador Colidiu")
     }
   }
 }
